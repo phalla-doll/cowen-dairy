@@ -64,7 +64,7 @@ export default function Home() {
           {/* Right Hero Image */}
           <div className="rounded-[2rem] overflow-hidden relative group">
             <Image 
-              src="https://images.unsplash.com/photo-1528650128741-6e3e5c9b63c7?q=80&w=2070&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1546447147-3dc2fac8aa2c?q=80&w=2070&auto=format&fit=crop"
               alt="Brown and white cow grazing"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -201,7 +201,7 @@ export default function Home() {
           <div className="relative h-[600px] rounded-[2rem] overflow-hidden ml-[-4rem] lg:ml-[-8rem] hidden lg:block">
              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-cowen-cream/80 z-10" />
              <Image 
-                src="https://images.unsplash.com/photo-1599368545802-555fb7cb8114?q=80&w=2070&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1527153857715-3bdad4e3776c?q=80&w=2070&auto=format&fit=crop"
                 alt="Cow staring"
                 fill
                 className="object-cover"
@@ -230,7 +230,7 @@ export default function Home() {
                <div>
                   <div className="relative h-48 rounded-3xl overflow-hidden mb-4 shadow-lg border border-white/50">
                      <Image 
-                        src="https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1974&auto=format&fit=crop"
+                        src="https://images.unsplash.com/photo-1500595046743-cd271d694af9?q=80&w=1974&auto=format&fit=crop"
                         alt="Calves"
                         fill
                         className="object-cover hover:scale-105 transition-transform duration-700"
@@ -360,7 +360,7 @@ export default function Home() {
             {/* Image Card 1 */}
             <div className="rounded-3xl overflow-hidden relative group h-[350px] shadow-lg">
                <Image 
-                  src="https://images.unsplash.com/photo-1603048297172-c92544798d5e?q=80&w=2070&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1544025162-81111421550a?q=80&w=2000&auto=format&fit=crop"
                   alt="Raw steak"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -394,7 +394,7 @@ export default function Home() {
             {/* Image Card 2 */}
             <div className="rounded-3xl overflow-hidden relative group h-[350px] shadow-lg">
                <Image 
-                  src="https://images.unsplash.com/photo-1542382156909-9ae37b3f56fd?q=80&w=2062&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1533090150919-45f8cb478bc0?q=80&w=2062&auto=format&fit=crop"
                   alt="Picnic"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
