@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Search, ArrowRight, Lock, ChevronLeft, ChevronRight, Star, CheckCircle2, Beef, Leaf, Droplets, Sun } from 'lucide-react';
+import { Search, ArrowRight, Lock, ChevronLeft, ChevronRight, Star, CheckCircle2, Beef, Leaf, Droplets, Sun, Mail, Phone, MapPin, Send } from 'lucide-react';
 import * as motion from 'motion/react-client';
 
 export default function Home() {
@@ -498,6 +498,104 @@ export default function Home() {
                />
             </div>
          </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-24 px-4 lg:px-8 bg-white relative overflow-hidden" id="contact">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-rounded text-4xl md:text-5xl font-bold text-cowen-brown uppercase tracking-tight mb-4">
+              Get In Touch
+            </h2>
+            <p className="text-gray-600 font-medium max-w-xl mx-auto">
+              Whether you have a question about our practices, want to place a wholesale order, or just say hello, we&apos;d love to hear from you.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+            {/* Contact Details */}
+            <div className="bg-cowen-cream rounded-[2.5rem] p-10 lg:p-14 border border-gray-100 shadow-sm relative overflow-hidden">
+               {/* background decor */}
+               <div className="absolute top-0 right-0 w-64 h-64 bg-cowen-green/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+
+               <h3 className="font-display text-2xl font-bold mb-8 uppercase text-cowen-brown">Farm Details</h3>
+               
+               <div className="space-y-8 relative z-10">
+                 <div className="flex gap-5 items-start group">
+                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:bg-cowen-orange group-hover:text-white transition-colors text-cowen-brown">
+                     <MapPin className="w-5 h-5" />
+                   </div>
+                   <div>
+                     <h4 className="font-bold text-sm uppercase text-gray-500 mb-1">Visit Us</h4>
+                     <p className="text-cowen-brown font-medium text-lg leading-snug">
+                       1234 Pasture Lane<br/>Meadowville, CA 90210
+                     </p>
+                   </div>
+                 </div>
+
+                 <div className="flex gap-5 items-start group">
+                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:bg-cowen-orange group-hover:text-white transition-colors text-cowen-brown">
+                     <Phone className="w-5 h-5" />
+                   </div>
+                   <div>
+                     <h4 className="font-bold text-sm uppercase text-gray-500 mb-1">Call Us</h4>
+                     <p className="text-cowen-brown font-medium text-lg leading-snug">
+                       1-800-MOO-MILK <br/><span className="text-sm text-gray-500">(1-800-666-6455)</span>
+                     </p>
+                   </div>
+                 </div>
+
+                 <div className="flex gap-5 items-start group">
+                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:bg-cowen-orange group-hover:text-white transition-colors text-cowen-brown">
+                     <Mail className="w-5 h-5" />
+                   </div>
+                   <div>
+                     <h4 className="font-bold text-sm uppercase text-gray-500 mb-1">Email Us</h4>
+                     <p className="text-cowen-brown font-medium text-lg leading-snug">
+                       hello@cowendairy.com
+                     </p>
+                   </div>
+                 </div>
+               </div>
+
+               <div className="mt-16 pt-8 border-t border-cowen-brown/10 relative z-10">
+                 <h4 className="font-bold text-sm uppercase text-gray-500 mb-2">Office Hours</h4>
+                 <p className="text-cowen-brown font-medium">Monday - Friday: 8am - 5pm</p>
+                 <p className="text-cowen-brown font-medium">Saturday: 9am - 1pm</p>
+               </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className="p-2">
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold uppercase tracking-wide text-gray-500 ml-1">First Name</label>
+                    <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-cowen-orange/50 focus:border-cowen-orange transition-all font-medium text-cowen-brown" placeholder="Jane" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold uppercase tracking-wide text-gray-500 ml-1">Last Name</label>
+                    <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-cowen-orange/50 focus:border-cowen-orange transition-all font-medium text-cowen-brown" placeholder="Doe" />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-xs font-bold uppercase tracking-wide text-gray-500 ml-1">Email Address</label>
+                  <input type="email" className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-cowen-orange/50 focus:border-cowen-orange transition-all font-medium text-cowen-brown" placeholder="jane@example.com" />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-xs font-bold uppercase tracking-wide text-gray-500 ml-1">Message</label>
+                  <textarea rows={5} className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-6 py-4 focus:outline-none focus:ring-2 focus:ring-cowen-orange/50 focus:border-cowen-orange transition-all font-medium text-cowen-brown resize-none" placeholder="How can we help you?"></textarea>
+                </div>
+
+                <button type="button" className="w-full bg-cowen-brown text-white rounded-2xl px-8 py-5 font-bold uppercase tracking-widest hover:bg-cowen-orange transition-colors flex items-center justify-center gap-3">
+                  SEND INQUIRY <Send className="w-4 h-4" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Footer Banner Section */}
