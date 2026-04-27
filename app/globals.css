@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=pally@500,700&f[]=satoshi@400,500,700&display=swap');
+
+@theme {
+  --font-display: 'Clash Display', sans-serif;
+  --font-rounded: 'Pally', sans-serif;
+  --font-sans: 'Satoshi', sans-serif;
+
+  --color-cowen-green: #084C24;
+  --color-cowen-orange: #FF6B35;
+  --color-cowen-yellow: #FFC857;
+  --color-cowen-brown: #3E2723;
+  --color-cowen-cream: #F4F1EB;
+  --color-cowen-lightgreen: #206d3d;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cowen-cream);
+  color: #1a1a1a;
+}
