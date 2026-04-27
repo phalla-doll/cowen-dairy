@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Search, ArrowRight, Lock, ChevronLeft, ChevronRight, Star, CheckCircle2, Beef } from 'lucide-react';
+import { Search, ArrowRight, Lock, ChevronLeft, ChevronRight, Star, CheckCircle2, Beef, Leaf, Droplets, Sun } from 'lucide-react';
 import * as motion from 'motion/react-client';
 
 export default function Home() {
@@ -194,6 +194,102 @@ export default function Home() {
           <span className="mx-8 flex items-center"><Beef className="w-5 h-5 mx-2 text-cowen-yellow" /> PASTURE PURE</span>
         </div>
       </div>
+
+      {/* History & Sustainability Section */}
+      <section className="py-24 px-4 lg:px-8 bg-cowen-green text-cowen-cream relative overflow-hidden">
+        {/* Background texture */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 10px), repeating-linear-gradient(#084C24, #084C24)' }}></div>
+        
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="font-rounded text-4xl md:text-5xl lg:text-6xl font-bold mb-6 uppercase tracking-tight text-cowen-yellow">
+              Nurturing the Land, <br className="hidden md:block" /> Sustaining the Future
+            </h2>
+            <p className="max-w-2xl mx-auto text-cowen-cream/80 text-lg font-medium leading-relaxed">
+              For over three generations, we have lived by a simple rule: if you take care of the land, the land will take care of you. Our legacy is built on sustainable farming.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* History Column */}
+            <div className="space-y-8">
+              <div className="relative h-80 md:h-[400px] w-full rounded-[2.5rem] overflow-hidden border border-white/20 shadow-2xl">
+                <Image 
+                  src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?q=80&w=2070&auto=format&fit=crop"
+                  alt="Lush green farm field"
+                  fill
+                  className="object-cover"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute top-4 left-4 bg-cowen-brown/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 uppercase tracking-widest text-xs font-bold text-cowen-yellow">
+                  Our Origins - Est. 1948
+                </div>
+              </div>
+              <div>
+                <h3 className="font-display text-3xl font-bold mb-4 uppercase">Rooted in Tradition</h3>
+                <p className="text-cowen-cream/80 leading-relaxed font-medium">
+                  What began as a modest herd of 20 cows in 1948 has blossomed into a pioneering dairy operation. The Cowen family has lovingly worked these fields, passing down the invaluable knowledge that true quality cannot be rushed. We honor the old ways of farming while embracing modern ecological sciences to ensure our cows are happy and our soil remains rich for generations to come.
+                </p>
+              </div>
+            </div>
+
+            {/* Sustainability Column */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="font-display text-3xl font-bold mb-8 uppercase text-cowen-yellow">The Eco-Promise</h3>
+                <div className="space-y-6">
+                  {/* Practice 1 */}
+                  <div className="flex gap-4 group cursor-pointer hover:bg-white/5 p-4 rounded-3xl transition-colors">
+                    <div className="w-14 h-14 shrink-0 bg-white/10 rounded-full flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-cowen-yellow group-hover:text-cowen-brown transition-all">
+                      <Leaf className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-1 uppercase tracking-wide">Regenerative Agriculture</h4>
+                      <p className="text-sm text-cowen-cream/80 font-medium leading-relaxed">
+                        We practice strict crop rotation and utilize natural, organic composting to maintain carbon-negative soil biology, restoring nutrients rather than depleting them.
+                      </p>
+                    </div>
+                  </div>
+                  {/* Practice 2 */}
+                  <div className="flex gap-4 group cursor-pointer hover:bg-white/5 p-4 rounded-3xl transition-colors">
+                    <div className="w-14 h-14 shrink-0 bg-white/10 rounded-full flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-blue-400 group-hover:text-white transition-all">
+                      <Droplets className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-1 uppercase tracking-wide">Water Conservation</h4>
+                      <p className="text-sm text-cowen-cream/80 font-medium leading-relaxed">
+                        Our advanced closed-loop filtration systems allow us to safely treat and recycle up to 80% of the water used across our dairy facilities.
+                      </p>
+                    </div>
+                  </div>
+                  {/* Practice 3 */}
+                  <div className="flex gap-4 group cursor-pointer hover:bg-white/5 p-4 rounded-3xl transition-colors">
+                    <div className="w-14 h-14 shrink-0 bg-white/10 rounded-full flex items-center justify-center border border-white/20 group-hover:scale-110 group-hover:bg-orange-400 group-hover:text-white transition-all">
+                      <Sun className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg mb-1 uppercase tracking-wide">Clean Energy Powered</h4>
+                      <p className="text-sm text-cowen-cream/80 font-medium leading-relaxed">
+                        With over 2,000 solar panels covering our barns, our daily processing operations run off 100% renewable solar and wind energy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="relative h-48 w-full rounded-[2rem] overflow-hidden border border-white/20 shadow-2xl">
+                <Image 
+                  src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2070&auto=format&fit=crop"
+                  alt="Farm tractor in field"
+                  fill
+                  className="object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Ranch Life Revolution Section */}
       <section className="py-24 px-4 lg:px-8 bg-cowen-cream overflow-hidden">
